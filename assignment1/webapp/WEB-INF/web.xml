@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>assignment1</display-name>
+  <servlet>
+  <servlet-name>Server</servlet-name>
+  <servlet-class>com.auca.service.Server</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>Server</servlet-name>
+  <url-pattern>/Server</url-pattern>
+  </servlet-mapping>
+  
+  <session-config>
+  <session-timeout>2</session-timeout>
+  </session-config>
+  
+   <servlet>
+    <servlet-name>forgetPassword</servlet-name>
+    <servlet-class>com.auca.service.ForgotPassword</servlet-class>
+</servlet>
+  <servlet-mapping>
+    <servlet-name>forgetPassword</servlet-name>
+    <url-pattern>/Forgot</url-pattern>
+</servlet-mapping>
+
+<servlet>  
+    <servlet-name>sign</servlet-name>
+    <servlet-class>com.auca.service.signup</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>sign</servlet-name>
+    <url-pattern>/signup</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>
